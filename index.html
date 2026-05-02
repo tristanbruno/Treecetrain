@@ -612,7 +612,9 @@ function om(id){document.getElementById(id).classList.add('vis')}
 function cm(id){document.getElementById(id).classList.remove('vis')}
 
 loadS();rDash();
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistrations().then(regs=>{regs.forEach(r=>r.unregister())});
+}
 </script>
 
 </body>
