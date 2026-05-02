@@ -1,5 +1,5 @@
 const CACHE = 'tct-v1';
-const BASE = '/treecetrain/';
+const BASE = '/Treecetrain/';
 
 self.addEventListener('install', e => {
   e.waitUntil(
