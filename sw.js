@@ -1,2 +1,2 @@
 // Service worker désactivé
-self.addEventListener(‘fetch’, e => {});
+self.addEventListener('fetch', e => {});
